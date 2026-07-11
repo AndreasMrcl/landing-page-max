@@ -1,11 +1,9 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Highlights from './components/Highlights'
-import ModelCatalog from './components/ModelCatalog'
-import PromoKredit from './components/PromoKredit'
-import Testimonials from './components/Testimonials'
-import Faq from './components/Faq'
-import LeadForm from './components/LeadForm'
+import HowToOrder from './components/HowToOrder'
+import UnitCars from './components/UnitCars'
+import BestService from './components/BestService'
+import ContactUs from './components/ContactUs'
 import Footer from './components/Footer'
 import FloatingWhatsapp from './components/FloatingWhatsapp'
 
@@ -15,12 +13,10 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Highlights />
-        <ModelCatalog />
-        <PromoKredit />
-        <Testimonials />
-        <Faq />
-        <LeadForm />
+        <HowToOrder />
+        <UnitCars />
+        <BestService />
+        <ContactUs />
       </main>
       <Footer />
       <FloatingWhatsapp />

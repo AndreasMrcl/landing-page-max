@@ -1,8 +1,12 @@
-# Suzuki Dealer — Landing Page
+# Suzuki Mobil Semarang — Landing Page Rental
 
-Landing page dealer resmi Suzuki: hero, keunggulan, katalog model, simulasi
-kredit interaktif, testimoni, FAQ, dan form test drive. Dibangun dengan
-**React 19 + Vite + Tailwind CSS v4**, konten berbahasa Indonesia.
+Landing page rental mobil Suzuki: hero + form pemesanan, cara sewa (How To
+Order), katalog unit dengan filter kategori, keunggulan layanan, dan kontak
+dengan peta. Dibangun dengan **React 19 + Vite + Tailwind CSS v4**, konten
+berbahasa Indonesia, dan responsif (mobile-first).
+
+Desain mengikuti prototipe pada folder `vite-app/` (hanya referensi), namun
+ditulis ulang dengan struktur komponen yang rapi, data-driven, dan responsif.
 
 ## Menjalankan
 
@@ -19,36 +23,42 @@ npm run lint     # cek lint
 ```
 src/
 ├── App.jsx                # merangkai semua section
-├── index.css              # Tailwind + theme brand Suzuki
+├── index.css              # Tailwind v4 + theme warna rental (biru)
+├── assets/                # gambar mobil Suzuki + logo (disediakan pengguna)
 ├── data/
-│   ├── site.js            # info dealer, nomor WhatsApp, menu navigasi
-│   └── models.js          # data model mobil + format Rupiah
+│   ├── site.js            # info bisnis, WhatsApp, navigasi, peta, opsi kebutuhan
+│   ├── cars.js            # katalog unit (import 18 aset) + format Rupiah
+│   └── content.js         # langkah "How To Order" + fitur "Best Service"
 └── components/
-    ├── Navbar.jsx         # header sticky + menu mobile
-    ├── Hero.jsx           # bagian utama + CTA
-    ├── Highlights.jsx     # keunggulan / kenapa beli di sini
-    ├── ModelCatalog.jsx   # katalog + filter kategori
-    ├── ModelCard.jsx      # kartu tiap model
-    ├── PromoKredit.jsx    # kalkulator simulasi cicilan
-    ├── Testimonials.jsx   # testimoni pelanggan
-    ├── Faq.jsx            # accordion pertanyaan umum
-    ├── LeadForm.jsx       # form test drive → WhatsApp
+    ├── Header.jsx         # header sticky + menu mobile
+    ├── Hero.jsx           # judul + tagline + form pemesanan + mobil unggulan
+    ├── BookingForm.jsx    # form pemesanan reusable → WhatsApp (Hero & Kontak)
+    ├── HowToOrder.jsx     # 3 langkah pemesanan
+    ├── UnitCars.jsx       # katalog unit + filter kategori
+    ├── CarCard.jsx        # kartu tiap unit + tombol harga → WhatsApp
+    ├── BestService.jsx    # keunggulan layanan
+    ├── ContactUs.jsx      # sosial media + form + Google Maps embed
     ├── Footer.jsx
     ├── FloatingWhatsapp.jsx
-    ├── CarIllustration.jsx# ilustrasi mobil (SVG inline)
     ├── Reveal.jsx         # animasi muncul saat scroll
-    └── icons.jsx          # ikon SVG inline
+    └── icons.jsx          # ikon SVG inline (tanpa CDN)
 ```
 
 ## Kustomisasi cepat
 
-- **Nomor WhatsApp, alamat, jam buka, nama dealer** → `src/data/site.js`
-- **Model, harga, spesifikasi** → `src/data/models.js`
-- **Warna brand** → variabel `--color-suzuki-*` di `src/index.css`
+- **Nomor WhatsApp, alamat, jam buka, sosial media, lokasi peta** → `src/data/site.js`
+- **Unit mobil, tarif sewa/hari, transmisi/bahan bakar** → `src/data/cars.js`
+  (tambahkan aset baru ke `src/assets/` lalu import di file ini)
+- **Langkah pemesanan & keunggulan** → `src/data/content.js`
+- **Warna brand / field** → variabel `--color-*` di `src/index.css`
 
 ## Catatan
 
-- Form test drive dan tombol kredit mengarah ke WhatsApp (`wa.me`) — tidak butuh
-  backend. Untuk menyimpan leads ke database, hubungkan `handleSubmit` di
-  `LeadForm.jsx` ke API/endpoint Anda.
-- Harga dan simulasi cicilan bersifat ilustrasi, bukan penawaran resmi.
+- Form pemesanan dan tombol harga mengarah ke WhatsApp (`wa.me`) — tanpa
+  backend. Untuk menyimpan pemesanan ke database, hubungkan `handleSubmit` di
+  `BookingForm.jsx` ke API/endpoint Anda.
+- Peta memakai Google Maps embed (tanpa API key); ganti `mapEmbed` di
+  `src/data/site.js` dengan lokasi asli.
+- Aset yang belum tersedia (mis. gambar hero/section khusus) sementara memakai
+  aset mobil yang ada dan mudah diganti nanti.
+- Tarif sewa bersifat estimasi untuk tampilan, bukan penawaran resmi.

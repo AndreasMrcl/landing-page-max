@@ -1,22 +1,40 @@
-// Informasi dealer — ganti sesuai data asli.
+// Informasi bisnis — ganti sesuai data asli.
 export const site = {
-  dealerName: 'Suzuki Ammertav Motor',
-  city: 'Jakarta',
-  phoneDisplay: '0812-3456-7890',
-  phone: '+6281234567890',
-  whatsapp: '6281234567890',
-  address: 'Jl. Jenderal Sudirman No. 88, Jakarta Selatan',
-  hours: 'Senin–Sabtu, 08.00–17.00 WIB',
-  salesName: 'Tim Sales Suzuki',
+  name: 'Suzuki Mobil Semarang',
+  brandLine: 'Dealer Resmi',
+  city: 'Semarang',
+  tagline: 'Mobil Nyaman, Harga Aman.',
+  heroLead:
+    'Beli mobil Suzuki baru di Semarang dengan mudah. Konsultasi unit, simulasi kredit, dan penawaran terbaik langsung dari sales resmi kami.',
+  // Harus sama dengan social.whatsapp di bawah (dipakai semua CTA WhatsApp & nomor telepon).
+  phoneDisplay: '0821-330-7751',
+  whatsapp: '628213307751',
+  email: 'halo@suzukimobilsemarang.id',
+  address: 'Jl. Pemuda No. 88, Semarang, Jawa Tengah',
+  hours: 'Setiap hari, 07.00–21.00 WIB',
+  // Sales pendamping — ganti nama sesuai data asli.
+  sales: {
+    name: 'Max',
+    role: 'Sales Consultant Resmi Suzuki',
+  },
+  // Google Maps embed (tanpa API key). Ganti query dengan alamat asli bila perlu.
+  mapEmbed:
+    'https://www.google.com/maps?q=Suzuki%20Semarang%20Jl.%20Pemuda&z=13&output=embed',
+  // Tiap kanal: href untuk tautan, handle untuk teks yang ditampilkan.
+  social: {
+    instagram: { href: 'https://instagram.com/maxsuzukimobil_sit', handle: '@maxsuzukimobil_sit' },
+    facebook: { href: 'https://facebook.com/maxsuzukimobilsit', handle: 'Max Suzuki SIT BSB' },
+    whatsapp: { href: 'https://wa.me/628213307751', handle: '0821-330-7751 (MAX)' },
+  },
 }
 
 export const waLink = (message) =>
   `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`
 
 export const nav = [
+  { label: 'Beranda', href: '#beranda' },
+  { label: 'Cara Order', href: '#cara-order' },
+  { label: 'Unit Mobil', href: '#unit-mobil' },
   { label: 'Keunggulan', href: '#keunggulan' },
-  { label: 'Model', href: '#model' },
-  { label: 'Promo Kredit', href: '#promo' },
-  { label: 'Testimoni', href: '#testimoni' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'Kontak', href: '#kontak' },
 ]

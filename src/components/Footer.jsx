@@ -1,34 +1,47 @@
 import logo from '../assets/logo-suzuki.png'
-import { nav, site, waLink } from '../data/site'
+import { nav, site } from '../data/site'
 import { Icon } from './icons'
+
+const socials = [
+  { key: 'instagram', href: site.social.instagram.href, label: 'Instagram', Comp: Icon.Instagram },
+  { key: 'facebook', href: site.social.facebook.href, label: 'Facebook', Comp: Icon.Facebook },
+  { key: 'whatsapp', href: site.social.whatsapp.href, label: 'WhatsApp', Comp: Icon.Whatsapp },
+]
 
 export default function Footer() {
   return (
-    <footer className="border-t border-ink/10 bg-white">
+    <footer className="bg-navy text-white/85">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
-          <img src={logo} alt="Suzuki" className="h-8 w-auto" />
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink/60">
-            {site.dealerName} — dealer resmi Suzuki di {site.city}. Melayani penjualan
-            unit baru, kredit, tukar tambah, dan servis resmi.
+          <div className="flex items-center gap-2.5">
+            <img src={logo} alt="Suzuki" className="h-8 w-auto brightness-0 invert" />
+          </div>
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/70">
+            Dealer resmi mobil Suzuki di {site.city} — unit lengkap, harga terbaik, serta layanan
+            pembelian cash maupun kredit yang mudah dan terpercaya.
           </p>
-          <a
-            href={waLink('Halo, saya ingin konsultasi mobil Suzuki.')}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-5 inline-flex items-center gap-2 rounded-full bg-suzuki-500 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-suzuki-600"
-          >
-            <Icon.Whatsapp className="h-4 w-4" />
-            {site.phoneDisplay}
-          </a>
+          <div className="mt-5 flex gap-3">
+            {socials.map(({ key, href, label, Comp }) => (
+              <a
+                key={key}
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={label}
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
+              >
+                <Comp className="h-5 w-5" />
+              </a>
+            ))}
+          </div>
         </div>
 
         <div>
-          <h4 className="text-sm font-bold text-ink">Navigasi</h4>
+          <h4 className="text-sm font-bold text-white">Navigasi</h4>
           <ul className="mt-4 space-y-2.5">
             {nav.map((item) => (
               <li key={item.href}>
-                <a href={item.href} className="text-sm text-ink/60 transition hover:text-suzuki-600">
+                <a href={item.href} className="text-sm text-white/70 transition hover:text-white">
                   {item.label}
                 </a>
               </li>
@@ -37,31 +50,28 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-bold text-ink">Kontak</h4>
-          <ul className="mt-4 space-y-3 text-sm text-ink/60">
-            <li className="flex items-start gap-2">
-              <Icon.MapPin className="mt-0.5 h-4 w-4 shrink-0 text-suzuki-500" />
+          <h4 className="text-sm font-bold text-white">Kontak</h4>
+          <ul className="mt-4 space-y-3 text-sm text-white/70">
+            <li className="flex items-start gap-2.5">
+              <Icon.MapPin className="mt-0.5 h-4 w-4 shrink-0" />
               {site.address}
             </li>
-            <li className="flex items-center gap-2">
-              <Icon.Phone className="h-4 w-4 shrink-0 text-suzuki-500" />
+            <li className="flex items-center gap-2.5">
+              <Icon.Phone className="h-4 w-4 shrink-0" />
               {site.phoneDisplay}
             </li>
-            <li className="flex items-center gap-2">
-              <Icon.Clock className="h-4 w-4 shrink-0 text-suzuki-500" />
+            <li className="flex items-center gap-2.5">
+              <Icon.Clock className="h-4 w-4 shrink-0" />
               {site.hours}
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="border-t border-ink/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-5 py-6 text-xs text-ink/50 sm:flex-row lg:px-8">
-          <p>© {new Date().getFullYear()} {site.dealerName}. Seluruh hak cipta dilindungi.</p>
-          <p>
-            Harga & simulasi bersifat ilustrasi, bukan penawaran resmi mengikat.
-          </p>
-        </div>
+      <div className="border-t border-white/15">
+        <p className="mx-auto max-w-7xl px-5 py-5 text-center text-xs text-white/60 lg:px-8">
+          © {new Date().getFullYear()} {site.name} — {site.brandLine}. Seluruh hak cipta dilindungi.
+        </p>
       </div>
     </footer>
   )
