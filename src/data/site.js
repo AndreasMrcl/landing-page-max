@@ -10,7 +10,8 @@ export const site = {
   phoneDisplay: '0821-330-7751',
   whatsapp: '628213307751',
   email: 'halo@suzukimobilsemarang.id',
-  address: 'Jl. Pemuda No. 88, Semarang, Jawa Tengah',
+  address:
+    'Kompleks Graha Taman Karet, Kedungpane, Mijen, Bukit Semarang, Baru City, Kota Semarang, Jawa Tengah 50211',
   hours: 'Setiap hari, 07.00–21.00 WIB',
   // Sales pendamping — ganti nama sesuai data asli.
   sales: {
@@ -19,7 +20,7 @@ export const site = {
   },
   // Google Maps embed (tanpa API key). Ganti query dengan alamat asli bila perlu.
   mapEmbed:
-    'https://www.google.com/maps?q=Suzuki%20Semarang%20Jl.%20Pemuda&z=13&output=embed',
+    'https://www.google.com/maps?q=Graha%20Taman%20Karet%2C%20Kedungpane%2C%20Mijen%2C%20Kota%20Semarang%2050211&z=15&output=embed',
   // Tiap kanal: href untuk tautan, handle untuk teks yang ditampilkan.
   social: {
     instagram: { href: 'https://instagram.com/maxsuzukimobil_sit', handle: '@maxsuzukimobil_sit' },

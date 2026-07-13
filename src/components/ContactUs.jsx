@@ -18,7 +18,7 @@ const contactInfo = [
 
 export default function ContactUs() {
   return (
-    <section id="kontak" className="py-20 lg:py-24">
+    <section id="kontak" className="py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Kolom kiri: profil sales + kanal kontak + form */}
@@ -27,8 +27,7 @@ export default function ContactUs() {
               Contact Us
             </Reveal>
             <Reveal as="p" delay={80} className="mt-3 max-w-md text-sm leading-relaxed text-ink-soft">
-              Ingin konsultasi unit, minta penawaran, atau simulasi kredit? Hubungi langsung sales
-              resmi kami melalui kanal berikut atau isi formulir di bawah ini.
+              Butuh informasi lebih lanjut mengenai promo, harga, atau pembelian mobil Suzuki? Hubungi kami sekarang.
             </Reveal>
 
             {/* Foto sales dan kanal sosial bersebelahan */}

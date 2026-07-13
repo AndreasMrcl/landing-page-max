@@ -1,30 +1,27 @@
-// Konten statis untuk section "How To Order" dan "Best Service".
-// Ikon dirujuk lewat nama: orderSteps dipetakan ke src/components/icons.jsx,
-// serviceFeatures ke react-icons (lihat BestService.jsx).
 
 export const orderSteps = [
   {
     id: 'pilih-unit',
-    icon: 'MapPin',
-    title: 'Pilih Unit',
+    icon: 'RiCarFill',
+    title: 'Pilih Tipe Kendaraan',
     description:
-      'Tentukan unit mobil sesuai kebutuhan dan tanggal sewa Anda langsung dari katalog kami.',
+      'Temukan berbagai pilihan mobil Suzuki yang sesuai dengan kebutuhan Anda. Mulai dari city car, MPV, SUV, hingga kendaraan niaga.',
     highlight: false,
   },
   {
     id: 'spk',
-    icon: 'Document',
+    icon: 'RiFileTextFill',
     title: 'SPK',
     description:
-      'Lengkapi data pemesanan dan konfirmasi jadwal. Tim kami memproses surat pesanan Anda.',
+      'Tim kami akan membantu Anda mulai dari pemilihan unit, pengajuan pembelian, hingga penyelesaian administrasi.',
     highlight: true,
   },
   {
     id: 'serah-terima',
-    icon: 'Car',
-    title: 'Serah Terima',
+    icon: 'RiMapPinFill',
+    title: 'Delivery Order',
     description:
-      'Unit siap diantar atau diambil di lokasi. Cek kondisi, lalu perjalanan Anda pun dimulai.',
+      'Setelah seluruh proses administrasi selesai, mobil Suzuki Anda akan kami siapkan dan kirim sesuai jadwal yang telah disepakati.',
     highlight: false,
   },
 ]
@@ -33,22 +30,22 @@ export const serviceFeatures = [
   {
     id: 'driver',
     icon: 'RiAccountCircleFill',
-    title: 'Driver Professional',
+    title: 'Pelayanan Terbaik',
     description:
-      'Pengemudi berpengalaman, ramah, dan hafal rute Semarang serta kota sekitarnya untuk perjalanan yang aman.',
+      'Kami berkomitmen memberikan pelayanan yang profesional, ramah, dan responsif.',
   },
   {
     id: 'harga',
     icon: 'BiSolidDollarCircle',
     title: 'Harga Bersaing',
     description:
-      'Tarif transparan tanpa biaya tersembunyi, dengan pilihan paket harian, mingguan, hingga bulanan.',
+      'Kami membantu Anda mendapatkan mobil Suzuki dengan nilai terbaik sesuai kebutuhan dan anggaran.',
   },
   {
     id: 'unit',
     icon: 'MdVerifiedUser',
     title: 'Unit Terjamin',
     description:
-      'Armada terawat, rutin diservis, dan dilengkapi asuransi sehingga Anda berkendara dengan tenang.',
+      'Kami memastikan Anda mendapatkan mobil yang aman, nyaman, dan sesuai dengan standar kualitas Suzuki.',
   },
 ]

@@ -22,14 +22,12 @@ export default function UnitCars() {
     setShowAll(false)
   }
 
-  // Setelah "Tampilkan Semua", slider mengikuti tombol yang kini pindah ke ujung.
-  // Kembalikan posisinya ke card pertama yang baru muncul agar urutannya terasa berlanjut.
   useEffect(() => {
     const el = sliderRef.current
     if (!showAll || !el) return
 
     const id = requestAnimationFrame(() => {
-      if (el.scrollWidth <= el.clientWidth) return // desktop: grid, tidak bisa di-scroll
+      if (el.scrollWidth <= el.clientWidth) return 
       const target = el.children[INITIAL_COUNT]
       if (!target) return
 
@@ -56,7 +54,7 @@ export default function UnitCars() {
   )
 
   return (
-    <section id="unit-mobil" className="py-20 lg:py-24">
+    <section id="unit-mobil" className="py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="text-center">
           <Reveal as="h2" className="text-3xl font-extrabold text-ink sm:text-4xl">

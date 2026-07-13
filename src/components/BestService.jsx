@@ -14,15 +14,14 @@ const featureIcons = {
 
 export default function BestService() {
   return (
-    <section id="keunggulan" className="py-20 lg:py-24">
+    <section id="keunggulan" className="py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="text-center">
           <Reveal as="h2" className="text-3xl font-extrabold leading-tight text-ink sm:text-4xl">
             Best Service and Best Price
           </Reveal>
           <Reveal as="p" delay={80} className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-ink-soft">
-            Kami mengutamakan kenyamanan dan keamanan Anda dengan layanan terbaik serta harga yang
-            transparan dan bersaing.
+            Dapatkan Mobil Suzuki Impian Anda Sekarang!"
           </Reveal>
         </div>
 
