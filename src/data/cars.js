@@ -41,15 +41,15 @@ export const cars = [
   { id: 'fronx-sgx', brand: 'Fronx Hybrid', variant: 'SGX', group: 'Fronx', image: fronxSgx, transmission: 'Matic', fuel: 'Hybrid', payment: 'Cash/Kredit', price: 316700000, cc: 1462, power: '100 PS', tech: 'Smart Hybrid & Suzuki Safety Support' },
   
   // Niaga
-  { id: 'carry-fd', brand: 'Carry Pick Up', variant: 'FD', group: 'Niaga', image: carryFd, transmission: 'Manual', fuel: 'Bensin', payment: 'Cash/Kredit', price: 202000000, cc: 1462, power: '97 PS', tech: 'Torsi Besar 135 Nm' },
-  { id: 'carry-wd', brand: 'Carry Pick Up', variant: 'WD', group: 'Niaga', image: carryWd, transmission: 'Manual', fuel: 'Bensin', payment: 'Cash/Kredit', price: 203100000, cc: 1462, power: '97 PS', tech: 'Torsi Besar 135 Nm' },
+  { id: 'carry-fd', brand: 'Carry Pick Up', variant: 'FD', group: 'Carry Pick Up', image: carryFd, transmission: 'Manual', fuel: 'Bensin', payment: 'Cash/Kredit', price: 202000000, cc: 1462, power: '97 PS', tech: 'Immobilizer' },
+  { id: 'carry-wd', brand: 'Carry Pick Up', variant: 'WD', group: 'Carry Pick Up', image: carryWd, transmission: 'Manual', fuel: 'Bensin', payment: 'Cash/Kredit', price: 203100000, cc: 1462, power: '97 PS', tech: 'Immobilizer' },
 
   // Grand Vitara
   { id: 'grand-vitara-glx', brand: 'Grand Vitara', variant: 'GLX', group: 'Grand Vitara', image: grandVitaraGlx, transmission: 'Matic', fuel: 'Hybrid', payment: 'Cash/Kredit', price: 445000000, cc: 1462, power: '103 PS', tech: 'Smart Hybrid & AllGrip' },
   { id: 'grand-vitara-glx-two-tone', brand: 'Grand Vitara', variant: 'GLX TWO TONE', group: 'Grand Vitara', image: grandVitaraGlxTwoTone, transmission: 'Matic', fuel: 'Hybrid', payment: 'Cash/Kredit', price: 448000000, cc: 1462, power: '103 PS', tech: 'Smart Hybrid & AllGrip' },
   
   // City car
-  { id: 's-presso', brand: 'S-Presso', group: 'City Car', image: sPresso, transmission: 'Manual', fuel: 'Bensin', payment: 'Cash/Kredit', price: 189400000, cc: 998, power: '68 PS', tech: 'ISS & Dual Airbag' },
+  { id: 's-presso', brand: 'S-Presso', group: 'S-Presso', image: sPresso, transmission: 'Manual', fuel: 'Bensin', payment: 'Cash/Kredit', price: 189400000, cc: 998, power: '68 PS', tech: 'ISS & Dual Airbag' },
   
   // Jimny
   { id: 'jimny-3', brand: 'Jimny', variant: '3 Doors', group: 'Jimny', image: jimny3, transmission: 'Manual', fuel: 'Bensin', payment: 'Cash/Kredit', price: 496200000, cc: 1462, power: '102 PS', tech: 'AllGrip Pro 4x4' },
