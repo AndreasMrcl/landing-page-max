@@ -1,5 +1,5 @@
-import jimny from '../assets/jimny-3-doors.png'
-import logo from '../assets/logo-suzuki.png'
+import jimny from '../assets/jimny-3-doors.webp'
+import logo from '../assets/logo-suzuki.webp'
 import { site } from '../data/site'
 import Reveal from './Reveal'
 import { Icon } from './icons'

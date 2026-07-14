@@ -1,4 +1,4 @@
-import salesPhoto from '../assets/sales.png'
+import salesPhoto from '../assets/sales.webp'
 import { site } from '../data/site'
 import BookingForm from './BookingForm'
 import Reveal from './Reveal'

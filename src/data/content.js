@@ -6,7 +6,6 @@ export const orderSteps = [
     title: 'Pilih Tipe Kendaraan',
     description:
       'Temukan berbagai pilihan mobil Suzuki yang sesuai dengan kebutuhan Anda. Mulai dari city car, MPV, SUV, hingga kendaraan niaga.',
-    highlight: false,
   },
   {
     id: 'spk',
@@ -14,7 +13,6 @@ export const orderSteps = [
     title: 'SPK',
     description:
       'Tim kami akan membantu Anda mulai dari pemilihan unit, pengajuan pembelian, hingga penyelesaian administrasi.',
-    highlight: true,
   },
   {
     id: 'serah-terima',
@@ -22,7 +20,6 @@ export const orderSteps = [
     title: 'Delivery Order',
     description:
       'Setelah seluruh proses administrasi selesai, mobil Suzuki Anda akan kami siapkan dan kirim sesuai jadwal yang telah disepakati.',
-    highlight: false,
   },
 ]
 

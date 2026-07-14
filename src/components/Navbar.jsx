@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import logo from '../assets/logo-suzuki.png'
+import logo from '../assets/logo-suzuki.webp'
 import { nav, site, waLink } from '../data/site'
 import { Icon } from './icons'
 
@@ -10,16 +10,16 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80)
+    const onScroll = () => {
+      const isScrolled = window.scrollY > 80
+      setScrolled(isScrolled)
+      // Saat navbar kembali tersembunyi, pastikan menu mobile ikut tertutup.
+      if (!isScrolled) setOpen(false)
+    }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
-
-  // Saat navbar kembali tersembunyi, pastikan menu mobile ikut tertutup.
-  useEffect(() => {
-    if (!scrolled) setOpen(false)
-  }, [scrolled])
 
   return (
     <header

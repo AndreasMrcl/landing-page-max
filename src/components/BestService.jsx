@@ -1,7 +1,7 @@
 import { BiSolidDollarCircle } from 'react-icons/bi'
 import { MdVerifiedUser } from 'react-icons/md'
 import { RiAccountCircleFill } from 'react-icons/ri'
-import serviceCar from '../assets/fronx-hybrid-sgx-2.png'
+import serviceCar from '../assets/fronx-hybrid-sgx-2.webp'
 import { serviceFeatures } from '../data/content'
 import Reveal from './Reveal'
 
@@ -30,6 +30,7 @@ export default function BestService() {
             <img
               src={serviceCar}
               alt="Suzuki Grand Vitara GLX"
+              loading="lazy"
               className="mx-auto w-full max-w-xl drop-shadow-2xl"
             />
           </Reveal>

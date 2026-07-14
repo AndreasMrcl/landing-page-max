@@ -1,4 +1,4 @@
-import logo from '../assets/logo-2.png'
+import logo from '../assets/logo-2.webp'
 import { nav, site } from '../data/site'
 import { Icon } from './icons'
 
@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-2.5">
-            <img src={logo} alt="Suzuki" className="h-22 w-auto" />
+            <img src={logo} alt="Suzuki" loading="lazy" className="h-22 w-auto" />
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/70">
             Dealer resmi mobil Suzuki di {site.city} — unit lengkap, harga terbaik, serta layanan

@@ -4,8 +4,6 @@ export const site = {
   brandLine: 'Dealer Resmi',
   city: 'Semarang',
   tagline: 'Mobil Nyaman, Harga Aman.',
-  heroLead:
-    'Beli mobil Suzuki baru di Semarang dengan mudah. Konsultasi unit, simulasi kredit, dan penawaran terbaik langsung dari sales resmi kami.',
   // Harus sama dengan social.whatsapp di bawah (dipakai semua CTA WhatsApp & nomor telepon).
   phoneDisplay: '0821-330-7751',
   whatsapp: '628213307751',

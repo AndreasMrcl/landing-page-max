@@ -1,23 +1,21 @@
 @import 'tailwindcss';
 
-/* ── Theme: Suzuki Mobil Semarang (rental) ──────────────────────── */
+/* ── Theme: Suzuki Mobil Semarang ───────────────────────────────── */
 @theme {
   --font-sans: 'Poppins', system-ui, 'Segoe UI', Roboto, sans-serif;
 
-  /* Brand rental */
+  /* Brand */
   --color-brand: #4149dc; /* tombol utama / aksen */
-  --color-brand-dark: #2d34a8; /* hover tombol utama */
   --color-navy: #305ba4; /* tombol sekunder, tile ikon, footer */
-  --color-navy-dark: #244a86;
+  --color-navy-dark: #244a86; /* hover navy */
 
   /* Field / input */
-  --color-field: #c0d8ff; /* latar input */
+  --color-field: #c0d8ff; /* latar input & tombol harga */
   --color-field-strong: #a9c8ff; /* fokus/hover input */
   --color-placeholder: #7f89b0; /* teks placeholder */
 
   /* Suzuki logo & teks */
   --color-suzuki-red: #e4002b;
-  --color-suzuki-ink: #141a8f;
 
   /* Netral */
   --color-page: #ffffff; /* latar halaman */
@@ -28,19 +26,6 @@
   --shadow-lift: 0 18px 40px rgba(65, 73, 220, 0.28);
 
   --radius-field: 22px;
-
-  --animate-float: float 6s ease-in-out infinite;
-}
-
-/* Gradient radial biru khas hero — dipakai lewat class .hero-glow */
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-14px);
-  }
 }
 
 /* ── Base ───────────────────────────────────────────────────────── */
@@ -162,8 +147,5 @@ section[id] {
     opacity: 1;
     transform: none;
     transition: none;
-  }
-  .animate-float {
-    animation: none;
   }
 }
